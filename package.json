@@ -2,7 +2,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon server.ts",
-    "build": "tsc -p .",
+    "build": "heroku run npx sequelize-cli db:migrate tsc -p .",
     "lint": "eslint src/** ",
     "lint-fix": "eslint  src/** --fix",
     "prettier": "prettier --check src/**",
