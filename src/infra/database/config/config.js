@@ -27,7 +27,6 @@ const databaseCredentials = {
     },
 };
 const { username, password, database, host, dialect } = databaseCredentials.development;
-console.log("databaseCredentials", databaseCredentials);
 module.exports = databaseCredentials;
 
 module.exports.connection = new Sequelize(database, username, password, {
