@@ -4,7 +4,16 @@ on:
   push: 
     branches: [development]
 jobs: 
+  setup: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "set up"
+  test: 
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo "test"
   build:
     runs-on: ubuntu-latest
     steps: 
       - run: echo 'chay nek'
+  
