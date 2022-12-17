@@ -5,8 +5,8 @@ on:
   label:
     types:
       - created
-  # push: 
-  #   branches: [development]
+  push: 
+    branches: [development]
 jobs: 
 
   setup:
