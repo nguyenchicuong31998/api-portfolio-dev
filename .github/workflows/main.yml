@@ -27,6 +27,6 @@ jobs:
       # - uses: actions/setup-node@v3 
       #   with:
       #       node-version: ${{ matrix.node }}
-      - run: sh ./github-action-scripts.sh
+      - run: sh ./github-action-script.sh
      
   
