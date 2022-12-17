@@ -6,9 +6,10 @@ router.get(`/`, async (req: Request, res: Response) => {
     // eslint-disable-next-line no-useless-catch
     try {
         const query = { ...req.query };
-        const users = await userService.getAll(query);
         res.status(200).json({
-            data: users,
+            data: {
+                name: "ok",
+            },
         });
     } catch (err) {
         throw err;
