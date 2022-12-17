@@ -2,9 +2,9 @@ name: test-deploy
 
 on: 
   push: 
-    branches: [main]
+    branches: [development]
 jobs: 
-  deploy:
-     runs-on: ubuntu-latest
-     steps: 
-        - run: echo "deploying"
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo 'chay nek'
