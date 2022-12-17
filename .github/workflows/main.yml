@@ -1,4 +1,5 @@
 name: test-deploy
+run-name: nguyen chi cuong 
 
 on: 
   label:
@@ -7,10 +8,12 @@ on:
   # push: 
   #   branches: [development]
 jobs: 
-  setup: 
+
+  setup:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "set up"
+      - name: setup ok
+        run: echo "set up"
   test: 
     needs: setup
     runs-on: ubuntu-latest
