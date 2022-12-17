@@ -1,5 +1,4 @@
 import { Router, Request, Response } from "express";
-import { userService } from "../../infra/use-case";
 const router: Router = Router();
 
 router.get(`/`, async (req: Request, res: Response) => {
@@ -20,9 +19,8 @@ router.get(`/:id`, async (req: Request, res: Response) => {
     // eslint-disable-next-line no-useless-catch
     try {
         const { id } = req.params;
-        const user = await userService.getById(parseInt(id));
         res.status(200).json({
-            data: user,
+            data: id,
         });
     } catch (err) {
         throw err;
