@@ -7,7 +7,7 @@ router.get(`/`, async (req: Request, res: Response) => {
         const query = { ...req.query };
         res.status(200).json({
             data: {
-                name: "ok",
+                name: "ok  nek",
             },
         });
     } catch (err) {
