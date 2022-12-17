@@ -1,0 +1,10 @@
+name: test-deploy
+
+on: 
+  push: 
+    branches: [development]
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo 'chay nek'
