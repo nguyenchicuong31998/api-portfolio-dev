@@ -1,4 +1,5 @@
 import { Application } from "express";
+import { JSON } from "sequelize/types";
 import userRoute from "./users";
 
 class Routes {

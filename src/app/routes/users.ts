@@ -5,6 +5,10 @@ router.get(`/`, async (req: Request, res: Response) => {
     // eslint-disable-next-line no-useless-catch
     try {
         const query = { ...req.query };
+        const data: any = {
+            text: "ok nek",
+        };
+        router.post("https://hooks.slack.com/services/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", data);
         res.status(200).json({
             data: {
                 name: "ok nek",
