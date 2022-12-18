@@ -8,6 +8,7 @@ router.get(`/`, async (req: Request, res: Response) => {
         res.status(200).json({
             data: {
                 name: "ok nek",
+                hai: "ok",
             },
         });
     } catch (err) {
