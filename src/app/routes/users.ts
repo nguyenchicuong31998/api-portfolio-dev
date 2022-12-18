@@ -9,7 +9,6 @@ router.get(`/`, async (req: Request, res: Response) => {
             data: {
                 name: "ok nek",
                 hai: "ok",
-                ba: "3",
             },
         });
     } catch (err) {
