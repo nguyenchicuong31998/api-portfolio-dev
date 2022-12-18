@@ -10,7 +10,6 @@ router.get(`/`, async (req: Request, res: Response) => {
                 name: "ok nek",
                 hai: "ok",
                 ba: "3",
-                bn: "k",
             },
         });
     } catch (err) {
